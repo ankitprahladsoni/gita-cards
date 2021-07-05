@@ -42,6 +42,7 @@ const SliderItem = ({ children, ...rest }: any) => {
         font-size: 24px;
         color: #000;
         min-height: 200px;
+        touch-action: none;
       `}
       {...rest}
     >
