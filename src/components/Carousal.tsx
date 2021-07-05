@@ -102,6 +102,8 @@ const SliderWrapper = ({ children }: any) => {
 const Content = () => {
   return (
     <div>
+      Title of the card
+      {/* <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
       fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
       blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
@@ -151,12 +153,7 @@ const Content = () => {
       fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
       blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
       blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
+      <br /> */}
     </div>
   );
 };
