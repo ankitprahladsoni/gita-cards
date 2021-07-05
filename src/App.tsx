@@ -1,10 +1,12 @@
-import Carousal from "./components/Carousal"
+import Carousal from "./components/Carousal";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "./theme";
 
 function App() {
   return (
-    <div >
-     <Carousal />
-    </div>
+    <ChakraProvider theme={theme}>
+      <Carousal />
+    </ChakraProvider>
   );
 }
 

@@ -40,7 +40,7 @@ const SliderItem = ({ children, ...rest }: any) => {
         width: 100%;
         height: 100%;
         font-size: 24px;
-        color: #000;
+        // color: #000;
         min-height: 200px;
         touch-action: none;
       `}
@@ -57,7 +57,7 @@ const SliderWrapper = ({ children }: any) => {
       css={css`
         border-radius: 12px;
         overflow: hidden;
-        background-color: #fff;
+        // background-color: #fff;
         padding: 16px;
         flex: 1;
         margin: 24px;
@@ -104,11 +104,6 @@ const Content = () => {
   return (
     <div>
       Title of the card
-      {/* <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
       <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
       fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
@@ -154,7 +149,12 @@ const Content = () => {
       fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
       blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
       blanditiis!
-      <br /> */}
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
+      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
+      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
+      blanditiis!
+      <br />
     </div>
   );
 };
