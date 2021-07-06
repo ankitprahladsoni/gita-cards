@@ -39,7 +39,7 @@ const SliderItem = ({ children, ...rest }: any) => {
 
 const SliderWrapper = ({ children }: any) => {
   return (
-    <Box borderRadius={12} overflow="hidden" p={4} m={4} boxShadow="md">
+    <Box borderRadius={12} p={4} m={4} boxShadow="md">
       {children}
     </Box>
   );
@@ -47,7 +47,7 @@ const SliderWrapper = ({ children }: any) => {
 
 const Content = () => {
   return (
-    <Box>
+    <Box overflow="auto" sx={{ touchAction: "pan-y" }}>
       Title of the card
       <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
@@ -79,27 +79,6 @@ const Content = () => {
       fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
       blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
       blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
     </Box>
   );
 };
