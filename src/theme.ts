@@ -5,5 +5,10 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config });
+const theme = extendTheme({
+  config,
+  fonts: {
+    body: "Poppins,sans-serif", //'Amita', cursive;
+  },
+});
 export default theme;
