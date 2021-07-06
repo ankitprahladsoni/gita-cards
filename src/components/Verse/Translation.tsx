@@ -5,7 +5,7 @@ type Props = {};
 
 const Translation = (props: Props) => {
   return (
-    <Box py={2}>
+    <Box as="section" py={2}>
       अनुवाद:
       <br />
       धृतराष्ट्र बोले (टिप्पणी प0 1.2) - हे संजय! (टिप्पणी प0 1.3) धर्मभूमि

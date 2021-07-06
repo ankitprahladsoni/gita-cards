@@ -5,7 +5,7 @@ type Props = {};
 
 const Commentary = (props: Props) => {
   return (
-    <Box py={2}>
+    <Box as="section" py={2}>
       समीक्षा
       <br />
       व्याख्या-- 'धर्मक्षेत्रे' 'कुरुक्षेत्रे'-- कुरुक्षेत्र में देवताओं ने यज्ञ
