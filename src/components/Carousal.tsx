@@ -1,5 +1,6 @@
 import { useSpringCarousel } from "react-spring-carousel-js";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Divider, Flex } from "@chakra-ui/react";
+import Verse from "./Verse";
 
 const Carousal = () => {
   const { carouselFragment } = useSpringCarousel({
@@ -48,37 +49,13 @@ const SliderWrapper = ({ children }: any) => {
 const Content = () => {
   return (
     <Box overflow="auto" sx={{ touchAction: "pan-y" }}>
-      Title of the card
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
-      fugiat voluptas veniam quos voluptatem perferendis sint odio ratione? Amet
-      blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
-      blanditiis!
+      <Box py={2}>अध्याय 1 श्लोक 1</Box>
+      <Divider />
+      <Verse />
+      <Divider />
+      <Verse.Translation />
+      <Divider />
+      <Verse.Commentary />
     </Box>
   );
 };
