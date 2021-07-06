@@ -39,8 +39,6 @@ const SliderItem = ({ children, ...rest }: any) => {
         align-items: center;
         width: 100%;
         height: 100%;
-        font-size: 24px;
-        min-height: 200px;
         touch-action: none;
       `}
       {...rest}
@@ -58,8 +56,7 @@ const SliderWrapper = ({ children }: any) => {
         overflow: hidden;
         padding: 16px;
         margin: 24px;
-        box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.0012),
-          0 12.3px 17.9px rgba(0, 0, 0, 0.062), 0 10px 20px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 6.7px 5.3px, 0 12.3px 17.9px, 0 10px 20px;
       `}
     >
       {children}
@@ -69,7 +66,11 @@ const SliderWrapper = ({ children }: any) => {
 
 const Content = () => {
   return (
-    <div>
+    <div
+      css={css`
+        overflow: auto;
+      `}
+    >
       Title of the card
       <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
