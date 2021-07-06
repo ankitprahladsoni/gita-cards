@@ -1,6 +1,5 @@
-/** @jsxImportSource @emotion/react */
 import { useSpringCarousel } from "react-spring-carousel-js";
-import { css } from "@emotion/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 const Carousal = () => {
   const { carouselFragment } = useSpringCarousel({
@@ -32,45 +31,23 @@ export default Carousal;
 
 const SliderItem = ({ children, ...rest }: any) => {
   return (
-    <div
-      css={css`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        touch-action: none;
-      `}
-      {...rest}
-    >
+    <Flex h="100%" w="100%" sx={{ "touch-action": "none" }} {...rest}>
       {children}
-    </div>
+    </Flex>
   );
 };
 
 const SliderWrapper = ({ children }: any) => {
   return (
-    <div
-      css={css`
-        border-radius: 12px;
-        overflow: hidden;
-        padding: 16px;
-        margin: 24px;
-        box-shadow: 0 6.7px 5.3px, 0 12.3px 17.9px, 0 10px 20px;
-      `}
-    >
+    <Box borderRadius={12} overflow="hidden" p={4} m={4} boxShadow="md">
       {children}
-    </div>
+    </Box>
   );
 };
 
 const Content = () => {
   return (
-    <div
-      css={css`
-        overflow: auto;
-      `}
-    >
+    <Box>
       Title of the card
       <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam
@@ -123,6 +100,6 @@ const Content = () => {
       blanditiis totam, tenetur dolorem dicta facilis beatae. Optio, odio
       blanditiis!
       <br />
-    </div>
+    </Box>
   );
 };
