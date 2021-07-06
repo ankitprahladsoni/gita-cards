@@ -40,7 +40,7 @@ const SliderItem = ({ children, ...rest }: any) => {
 
 const SliderWrapper = ({ children }: any) => {
   return (
-    <Box borderRadius={12} p={4} m={4} boxShadow="md">
+    <Box borderRadius={12} p={2} m={2} boxShadow="md">
       {children}
     </Box>
   );
