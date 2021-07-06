@@ -50,7 +50,7 @@ const Content = () => {
   return (
     <Box overflow="auto" sx={{ touchAction: "pan-y" }}>
       <Box py={2} textAlign="center">
-        अध्याय 1 श्लोक 1
+        अध्याय 1, श्लोक 1
       </Box>
       <Divider />
       <Verse />
