@@ -8,7 +8,7 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   config,
   fonts: {
-    body: "Poppins,sans-serif", //'Amita', cursive;
+    body: "Poppins,sans-serif",
   },
 });
 export default theme;
