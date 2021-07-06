@@ -2,7 +2,7 @@ import { useSpringCarousel } from "react-spring-carousel-js";
 import { Box, Divider, Flex } from "@chakra-ui/react";
 import Verse from "./Verse";
 
-const Carousal = () => {
+const Carousel = () => {
   const { carouselFragment } = useSpringCarousel({
     withLoop: true,
     items: [
@@ -28,7 +28,7 @@ const Carousal = () => {
   return <SliderWrapper>{carouselFragment}</SliderWrapper>;
 };
 
-export default Carousal;
+export default Carousel;
 
 const SliderItem = ({ children, ...rest }: any) => {
   return (
