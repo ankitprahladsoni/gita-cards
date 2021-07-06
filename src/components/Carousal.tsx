@@ -31,7 +31,7 @@ export default Carousal;
 
 const SliderItem = ({ children, ...rest }: any) => {
   return (
-    <Flex h="100%" w="100%" sx={{ "touch-action": "none" }} {...rest}>
+    <Flex h="100%" w="100%" sx={{ touchAction: "none" }} {...rest}>
       {children}
     </Flex>
   );
