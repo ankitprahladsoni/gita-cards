@@ -3,7 +3,7 @@ import { Box, Divider, Flex } from "@chakra-ui/react";
 import Verse from "./Verse";
 
 const Carousel = () => {
-  const { carouselFragment } = useSpringCarousel({
+  const { carouselFragment, useListenToCustomEvent } = useSpringCarousel({
     withLoop: true,
     items: [
       {
@@ -23,6 +23,11 @@ const Carousel = () => {
         ),
       },
     ],
+  });
+  useListenToCustomEvent((event) => {
+    if (event.eventName === "onSlideStartChange") {
+      window.scrollTo(0, 0);
+    }
   });
 
   return <SliderWrapper>{carouselFragment}</SliderWrapper>;
