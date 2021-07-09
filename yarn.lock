@@ -10185,10 +10185,10 @@ react-scripts@4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
-react-spring-carousel-js@^1.9.24:
-  version "1.9.24"
-  resolved "https://registry.yarnpkg.com/react-spring-carousel-js/-/react-spring-carousel-js-1.9.24.tgz#17b42f9ffe86ab7a0958c547bf4c872e8b446109"
-  integrity sha512-c7SxDnG0PLresYnutTBkr2iaLRfg7b07UgPFNGixPq/AQv7soMI2izMb5YbNvyD7WIErPA+TnVe7dfWTE00DVA==
+react-spring-carousel-js@^1.9.25:
+  version "1.9.25"
+  resolved "https://registry.yarnpkg.com/react-spring-carousel-js/-/react-spring-carousel-js-1.9.25.tgz#c558351b17e4814defba17ee0c1542cbf978acc7"
+  integrity sha512-1zLgFGE+mb0XKwYBJ9o7GC11gl/zzZ4M7W+9ldN/CWXWCUxQeXP6D4bNI5WiFgg9LgKdGkhWbyFWxkavm1fwlA==
   dependencies:
     react-spring "^9.2.3"
     react-use-gesture "^9.1.3"
