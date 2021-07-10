@@ -1,21 +1,37 @@
 import React from "react";
-import Commentary from "./Commentary";
-import Translation from "./Translation";
 import { Box, Text } from "@chakra-ui/react";
-type Props = {};
 
-const Verse = (props: Props) => {
+type Props = {
+  text: string;
+};
+
+const Verse = ({ text }: Props) => {
   return (
     <Box as="section" py={2}>
       <Text
         fontFamily="'Gotu', sans-serif"
         textAlign="center"
         fontWeight="semibold"
+        whiteSpace="pre-wrap"
       >
-        धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।
-        <br />
-        मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ।।
+        {text}
       </Text>
+    </Box>
+  );
+};
+
+const Translation = ({ text }: Props) => {
+  return (
+    <Box as="section" py={2} whiteSpace="pre-wrap">
+      {text}
+    </Box>
+  );
+};
+
+const Commentary = ({ text }: Props) => {
+  return (
+    <Box as="section" py={2} whiteSpace="pre-wrap">
+      {text}
     </Box>
   );
 };

@@ -1,6 +1,6 @@
 import authors from "../data/authors.json";
 import chapters from "../data/chapters.json";
-import * as commentary from "../data/commentary.json";
+import commentary from "../data/commentary.json";
 import languages from "../data/languages.json";
 import translation from "../data/translation.json";
 import verses from "../data/verse.json";
@@ -15,7 +15,7 @@ type CM = {
   authorName: string;
   author_id: number;
   description: string;
-  id: 11186;
+  id: number;
   lang: string;
   language_id: number;
   verseNumber: number;
