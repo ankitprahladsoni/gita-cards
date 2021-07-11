@@ -62,9 +62,9 @@ const SliderWrapper = ({ children }: any) => {
 
 const Content = ({ id }: any) => {
   const isActive = useInViewPort(id);
-  if (!isActive) {
-    return null;
-  }
+  // if (!isActive) {
+  //   return null;
+  // }
   const verse = allVerses[id];
 
   return (
@@ -77,7 +77,7 @@ const Content = ({ id }: any) => {
       <Divider />
       <Verse.Translation text={verse.translation} />
       <Divider />
-      <Verse.Commentary text={verse.commentary} />
+      {isActive ? <Verse.Commentary text={verse.commentary} /> : null}
     </Box>
   );
 };
@@ -95,7 +95,10 @@ const useInViewPort = (idx: number) => {
   useListenToCustomEvent((data) => {
     if (data.eventName === "onSlideChange") {
       const i = "" + idx;
-      setIsActive(getIsActiveItem(i) || getIsNextItem(i) || getIsPrevItem(i));
+      setIsActive(
+        getIsActiveItem(i)
+        //  || getIsNextItem(i) || getIsPrevItem(i)
+      );
     }
   });
 
