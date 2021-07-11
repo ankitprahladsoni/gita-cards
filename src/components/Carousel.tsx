@@ -9,7 +9,7 @@ const allVerses: any[] = getVerses();
 
 const Carousel = () => {
   const { carouselFragment, useListenToCustomEvent } = useSpringCarousel({
-    withLoop: true,
+    // withLoop: true,
     items: allVerses.map((v, i) => ({
       id: `${i}`,
       renderItem: (
@@ -33,7 +33,13 @@ export default Carousel;
 
 const SliderItem = ({ children, ...rest }: any) => {
   return (
-    <Flex h="100%" w="100%" sx={{ touchAction: "none" }} {...rest}>
+    <Flex
+      // h="100%"
+      w="100%"
+      sx={{ touchAction: "none" }}
+      // bg="gray"
+      {...rest}
+    >
       {children}
     </Flex>
   );
@@ -41,28 +47,21 @@ const SliderItem = ({ children, ...rest }: any) => {
 
 const SliderWrapper = ({ children }: any) => {
   return (
-    <Box borderRadius={12} p={2} m={2} boxShadow="md" h="100%">
+    <Box
+      borderRadius={12}
+      p={2}
+      m={2}
+      boxShadow="md"
+      // bg="blue"
+      // h="100%"
+    >
       {children}
     </Box>
   );
 };
 
 const Content = ({ id }: any) => {
-  const {
-    getIsActiveItem,
-    useListenToCustomEvent,
-    getIsNextItem,
-    getIsPrevItem,
-  } = useSpringCarouselContext();
-  // console.log(getCurrentActiveItem(), id);
-
-  const [isActive, setIsActive] = useState(getIsActiveItem("" + id));
-  useListenToCustomEvent((data) => {
-    if (data.eventName === "onSlideChange") {
-      const i = "" + id;
-      setIsActive(getIsActiveItem(i) || getIsNextItem(i) || getIsPrevItem(i));
-    }
-  });
+  const isActive = useInViewPort(id);
   if (!isActive) {
     return null;
   }
@@ -81,4 +80,24 @@ const Content = ({ id }: any) => {
       <Verse.Commentary text={verse.commentary} />
     </Box>
   );
+};
+
+const useInViewPort = (idx: number) => {
+  const {
+    getIsActiveItem,
+    useListenToCustomEvent,
+    getIsNextItem,
+    getIsPrevItem,
+  } = useSpringCarouselContext();
+  // console.log(getCurrentActiveItem(), id);
+
+  const [isActive, setIsActive] = useState(getIsActiveItem("" + idx));
+  useListenToCustomEvent((data) => {
+    if (data.eventName === "onSlideChange") {
+      const i = "" + idx;
+      setIsActive(getIsActiveItem(i) || getIsNextItem(i) || getIsPrevItem(i));
+    }
+  });
+
+  return isActive;
 };
