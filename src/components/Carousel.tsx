@@ -5,16 +5,18 @@ import { getVerses } from "./util";
 import { useSpringCarouselContext } from "react-spring-carousel-js";
 import { memo, useEffect, useRef, useState } from "react";
 import { useMemo } from "react";
+import { useChapterContext } from "./ChapterContext";
 
 // const allVerses: any[] = [];
 // getVerses().then((data) => allVerses.push(data));
 
 const Carousel = () => {
   const [allVerses, setAllVerses] = useState([]);
+  const [chapter] = useChapterContext();
 
   useEffect(() => {
-    getVerses().then((data) => setAllVerses(data as any));
-  }, []);
+    getVerses(chapter).then((data) => setAllVerses(data as any));
+  }, [chapter]);
 
   if (allVerses.length === 0) return null;
   return <AnotherW allVerses={allVerses} />;

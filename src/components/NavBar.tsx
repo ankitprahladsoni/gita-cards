@@ -9,6 +9,8 @@ import {
   Stack,
   Select,
 } from "@chakra-ui/react";
+import { createContext } from "react";
+import { useChapterContext } from "./ChapterContext";
 
 const Links = ["Dashboard", "Projects", "Team"];
 
@@ -28,6 +30,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 );
 
 export default function NavBar({ children }: any) {
+  const [chapter, setChapter] = useChapterContext();
   const options = [...Array(18)].map((_, i) => (
     <option key={i} value={`chapter_${i + 1}`}>
       Chapter {i + 1}
@@ -50,7 +53,13 @@ export default function NavBar({ children }: any) {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Select placeholder="Select option">{options}</Select>
+            <Select
+              placeholder="Select option"
+              value={chapter}
+              onChange={(e) => setChapter(e.target.value)}
+            >
+              {options}
+            </Select>
           </Flex>
         </Flex>
       </Box>
