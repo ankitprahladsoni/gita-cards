@@ -3,7 +3,8 @@ import { Box, Divider, Flex } from "@chakra-ui/react";
 import Verse from "./Verse";
 import { getVerses } from "./util";
 import { useSpringCarouselContext } from "react-spring-carousel-js";
-import { useState } from "react";
+import { memo, useState } from "react";
+import { useMemo } from "react";
 
 const allVerses: any[] = getVerses();
 
@@ -14,7 +15,7 @@ const Carousel = () => {
       id: `${i}`,
       renderItem: (
         <SliderItem>
-          <Content id={i} />
+          <ContentMemo id={i} />
         </SliderItem>
       ),
     })),
@@ -61,7 +62,7 @@ const SliderWrapper = ({ children }: any) => {
 };
 
 const Content = ({ id }: any) => {
-  const isActive = useInViewPort(id);
+  // const isActive = useInViewPort(id);
   // if (!isActive) {
   //   return null;
   // }
@@ -77,10 +78,14 @@ const Content = ({ id }: any) => {
       <Divider />
       <Verse.Translation text={verse.translation} />
       <Divider />
-      {isActive ? <Verse.Commentary text={verse.commentary} /> : null}
+      {/* {isActive ?  */}
+      <Verse.Commentary text={verse.commentary} />
+      {/* : null} */}
     </Box>
   );
 };
+
+const ContentMemo = memo(Content);
 
 const useInViewPort = (idx: number) => {
   const {

@@ -11,16 +11,6 @@ type Verse = {
   commentary: string;
 };
 
-type CM = {
-  authorName: string;
-  author_id: number;
-  description: string;
-  id: number;
-  lang: string;
-  language_id: number;
-  verseNumber: number;
-  verse_id: number;
-};
 export const getVerses = (): Verse[] => {
   // return verses.map((v) => {
   //   return {
