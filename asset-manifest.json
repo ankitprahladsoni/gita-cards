@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/gita-cards/static/js/main.21ea0a2d.chunk.js",
-    "main.js.map": "/gita-cards/static/js/main.21ea0a2d.chunk.js.map",
+    "main.js": "/gita-cards/static/js/main.77b4dd31.chunk.js",
+    "main.js.map": "/gita-cards/static/js/main.77b4dd31.chunk.js.map",
     "runtime-main.js": "/gita-cards/static/js/runtime-main.f017e834.js",
     "runtime-main.js.map": "/gita-cards/static/js/runtime-main.f017e834.js.map",
-    "static/js/2.7b617377.chunk.js": "/gita-cards/static/js/2.7b617377.chunk.js",
-    "static/js/2.7b617377.chunk.js.map": "/gita-cards/static/js/2.7b617377.chunk.js.map",
+    "static/js/2.d3a9a2f0.chunk.js": "/gita-cards/static/js/2.d3a9a2f0.chunk.js",
+    "static/js/2.d3a9a2f0.chunk.js.map": "/gita-cards/static/js/2.d3a9a2f0.chunk.js.map",
     "static/js/3.380b9924.chunk.js": "/gita-cards/static/js/3.380b9924.chunk.js",
     "static/js/3.380b9924.chunk.js.map": "/gita-cards/static/js/3.380b9924.chunk.js.map",
     "static/js/4.863a64b8.chunk.js": "/gita-cards/static/js/4.863a64b8.chunk.js",
@@ -47,11 +47,11 @@
     "index.html": "/gita-cards/index.html",
     "service-worker.js": "/gita-cards/service-worker.js",
     "service-worker.js.map": "/gita-cards/service-worker.js.map",
-    "static/js/2.7b617377.chunk.js.LICENSE.txt": "/gita-cards/static/js/2.7b617377.chunk.js.LICENSE.txt"
+    "static/js/2.d3a9a2f0.chunk.js.LICENSE.txt": "/gita-cards/static/js/2.d3a9a2f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f017e834.js",
-    "static/js/2.7b617377.chunk.js",
-    "static/js/main.21ea0a2d.chunk.js"
+    "static/js/2.d3a9a2f0.chunk.js",
+    "static/js/main.77b4dd31.chunk.js"
   ]
 }
