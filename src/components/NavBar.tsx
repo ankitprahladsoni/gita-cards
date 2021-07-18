@@ -4,12 +4,9 @@ import {
   Flex,
   HStack,
   Link,
-  useDisclosure,
   useColorModeValue,
-  Stack,
   Select,
 } from "@chakra-ui/react";
-import { createContext } from "react";
 import { useChapterContext } from "./ChapterContext";
 
 const Links = ["Dashboard", "Projects", "Team"];
@@ -63,8 +60,6 @@ export default function NavBar({ children }: any) {
           </Flex>
         </Flex>
       </Box>
-
-      {/* <Box p={4}>Main Content Here</Box> */}
       {children}
     </>
   );
