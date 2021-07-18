@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/gita-cards/static/js/main.e412acee.chunk.js",
-    "main.js.map": "/gita-cards/static/js/main.e412acee.chunk.js.map",
+    "main.js": "/gita-cards/static/js/main.f104aeb7.chunk.js",
+    "main.js.map": "/gita-cards/static/js/main.f104aeb7.chunk.js.map",
     "runtime-main.js": "/gita-cards/static/js/runtime-main.3550c31e.js",
     "runtime-main.js.map": "/gita-cards/static/js/runtime-main.3550c31e.js.map",
     "static/js/2.d1a4c345.chunk.js": "/gita-cards/static/js/2.d1a4c345.chunk.js",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.3550c31e.js",
     "static/js/2.d1a4c345.chunk.js",
-    "static/js/main.e412acee.chunk.js"
+    "static/js/main.f104aeb7.chunk.js"
   ]
 }
