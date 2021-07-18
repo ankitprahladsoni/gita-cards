@@ -30,7 +30,7 @@ export default function NavBar({ children }: any) {
   const [chapter, setChapter] = useChapterContext();
   const options = [...Array(18)].map((_, i) => (
     <option key={i} value={`chapter_${i + 1}`}>
-      Chapter {i + 1}
+      अध्याय {i + 1}
     </option>
   ));
   return (
@@ -51,7 +51,6 @@ export default function NavBar({ children }: any) {
           </HStack>
           <Flex alignItems={"center"}>
             <Select
-              placeholder="Select option"
               value={chapter}
               onChange={(e) => setChapter(e.target.value)}
             >
