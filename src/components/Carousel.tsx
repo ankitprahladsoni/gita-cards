@@ -2,7 +2,6 @@ import { useSpringCarousel } from "react-spring-carousel-js";
 import { Box, Divider, Flex } from "@chakra-ui/react";
 import Verse from "./Verse";
 import { getVerses } from "./util";
-import { useSpringCarouselContext } from "react-spring-carousel-js";
 import { memo, useEffect, useState } from "react";
 import { useChapterContext } from "./ChapterContext";
 
