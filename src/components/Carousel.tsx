@@ -3,19 +3,34 @@ import { Box, Divider, Flex } from "@chakra-ui/react";
 import Verse from "./Verse";
 import { getVerses } from "./util";
 import { useSpringCarouselContext } from "react-spring-carousel-js";
-import { memo, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import { useMemo } from "react";
 
-const allVerses: any[] = getVerses();
+// const allVerses: any[] = [];
+// getVerses().then((data) => allVerses.push(data));
 
 const Carousel = () => {
+  const [allVerses, setAllVerses] = useState([]);
+
+  useEffect(() => {
+    getVerses().then((data) => setAllVerses(data as any));
+  }, []);
+
+  if (allVerses.length === 0) return null;
+  return <AnotherW allVerses={allVerses} />;
+};
+
+export default Carousel;
+
+function AnotherW({ allVerses }: any) {
   const { carouselFragment, useListenToCustomEvent } = useSpringCarousel({
     // withLoop: true,
-    items: allVerses.map((v, i) => ({
+
+    items: allVerses.map((v: any, i: any) => ({
       id: `${i}`,
       renderItem: (
         <SliderItem>
-          <ContentMemo id={i} />
+          <ContentMemo id={allVerses[i]} />
         </SliderItem>
       ),
     })),
@@ -28,9 +43,7 @@ const Carousel = () => {
   });
 
   return <SliderWrapper>{carouselFragment}</SliderWrapper>;
-};
-
-export default Carousel;
+}
 
 const SliderItem = ({ children, ...rest }: any) => {
   return (
@@ -39,6 +52,8 @@ const SliderItem = ({ children, ...rest }: any) => {
       w="100%"
       sx={{ touchAction: "none" }}
       // bg="gray"
+      alignItems="flex-start"
+      alignContent="flex-start"
       {...rest}
     >
       {children}
@@ -66,7 +81,14 @@ const Content = ({ id }: any) => {
   // if (!isActive) {
   //   return null;
   // }
-  const verse = allVerses[id];
+  // const verse = allVerses[id];
+  const verse = id;
+  // const [height, setHeight] = useState(0);
+  // const elementRef = useRef<HTMLDivElement>(null);
+
+  // useEffect(() => {
+  //   setHeight(elementRef.current?.clientHeight || 0);
+  // }, []);
 
   return (
     <Box overflow="auto" sx={{ touchAction: "pan-y" }}>
@@ -81,6 +103,7 @@ const Content = ({ id }: any) => {
       {/* {isActive ?  */}
       <Verse.Commentary text={verse.commentary} />
       {/* : null} */}
+      {/* </div> */}
     </Box>
   );
 };

@@ -28,6 +28,11 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 );
 
 export default function NavBar({ children }: any) {
+  const options = [...Array(18)].map((_, i) => (
+    <option key={i} value={`chapter_${i + 1}`}>
+      Chapter {i + 1}
+    </option>
+  ));
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -45,11 +50,7 @@ export default function NavBar({ children }: any) {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Select placeholder="Select option">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </Select>
+            <Select placeholder="Select option">{options}</Select>
           </Flex>
         </Flex>
       </Box>

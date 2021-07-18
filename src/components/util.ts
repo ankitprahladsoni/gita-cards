@@ -11,7 +11,7 @@ type Verse = {
   commentary: string;
 };
 
-export const getVerses = (): Verse[] => {
+export const getVerses = (): Promise<Verse[]> => {
   // return verses.map((v) => {
   //   return {
   //     text: v.text,
@@ -25,5 +25,8 @@ export const getVerses = (): Verse[] => {
   //         .find((c) => c.authorName === "Swami Ramsukhdas")?.description || "",
   //   };
   // });
-  return verses as Verse[];
+  return import("../data/chapters/chapter_12.json").then(
+    (module) => module.default
+  );
+  // return verses as Verse[];
 };
