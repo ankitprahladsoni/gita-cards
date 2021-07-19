@@ -5,7 +5,7 @@ export type Verse = {
 };
 
 export const getVerses = (chapter: string): Promise<Verse[]> => {
-  return import(`../data/chapters/${chapter}.json`).then(
+  return import(`../data/chapters/${chapter}.ts`).then(
     (module) => module.default
   );
 };
