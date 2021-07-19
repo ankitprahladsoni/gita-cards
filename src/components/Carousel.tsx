@@ -35,7 +35,7 @@ const Content = ({ verse }: { verse: VerseType }) => {
       borderRadius={12}
       p={2}
       m={2}
-      boxShadow="md"
+      boxShadow="dark-lg"
     >
       <Verse text={verse.text} />
       <Divider />
