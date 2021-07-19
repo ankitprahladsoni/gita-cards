@@ -8,7 +8,7 @@ import "swiper/swiper.min.css";
 
 const Carousel = () => {
   const [allVerses, setAllVerses] = useState<VerseType[]>([]);
-  const [chapter] = useChapterContext();
+  const { chapter } = useChapterContext();
 
   useEffect(() => {
     getVerses(chapter).then((data) => setAllVerses(data));

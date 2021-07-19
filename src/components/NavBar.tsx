@@ -2,8 +2,8 @@ import { Box, Flex, HStack, useColorModeValue, Select } from "@chakra-ui/react";
 import { useChapterContext } from "./ChapterContext";
 
 export default function NavBar({ children }: any) {
-  const [chapter, setChapter] = useChapterContext();
-  const options = [...Array(18)].map((_, i) => (
+  const { chapter, setChapter } = useChapterContext();
+  const chapters = [...Array(18)].map((_, i) => (
     <option key={i} value={`chapter_${i + 1}`}>
       अध्याय {i + 1}
     </option>
@@ -20,7 +20,7 @@ export default function NavBar({ children }: any) {
               value={chapter}
               onChange={(e) => setChapter(e.target.value)}
             >
-              {options}
+              {chapters}
             </Select>
           </Flex>
         </Flex>
