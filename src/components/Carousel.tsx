@@ -8,14 +8,17 @@ import "swiper/swiper.min.css";
 
 const Carousel = () => {
   const [allVerses, setAllVerses] = useState<VerseType[]>([]);
-  const { chapter } = useChapterContext();
+  const { chapter, verse, dispatch } = useChapterContext();
 
   useEffect(() => {
-    getVerses(chapter).then((data) => setAllVerses(data));
+    getVerses(chapter).then((data) => {
+      setAllVerses(data);
+      dispatch({ type: "loadChapter", verseCount: data.length });
+    });
   }, [chapter]);
-
+  console.log(verse);
   return (
-    <Swiper className="mySwiper" autoHeight={true}>
+    <Swiper className="mySwiper" autoHeight={true} initialSlide={verse}>
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
           <ContentMemo verse={v} />
