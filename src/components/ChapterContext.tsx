@@ -26,6 +26,7 @@ export const ChapterProvider = ({ children }: any) => {
     chapter: state.chapter,
     verseCount: state.verseCount,
     verse: state.verse,
+    swiper: state.swiper,
     dispatch,
   };
 
@@ -46,7 +47,8 @@ function chapterReducer(state: any, action: any) {
       return { ...state, verseCount: action.verseCount };
     case "changeVerse":
       return { ...state, verse: action.verse };
-
+    case "setSwiper":
+      return { ...state, swiper: action.swiper };
     default:
       break;
   }

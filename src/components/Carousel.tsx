@@ -16,7 +16,6 @@ const Carousel = () => {
       dispatch({ type: "loadChapter", verseCount: data.length });
     });
   }, [chapter]);
-  const [sw, setSW] = useState();
 
   return (
     <Swiper
@@ -25,9 +24,8 @@ const Carousel = () => {
       initialSlide={verse}
       onSlideChange={(s) => {
         dispatch({ type: "changeVerse", verse: s.activeIndex });
-        // console.log((sw as any)?.slideTo);
       }}
-      onSwiper={(swiper) => setSW(swiper as any)}
+      onSwiper={(swiper) => dispatch({ type: "setSwiper", swiper })}
     >
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
