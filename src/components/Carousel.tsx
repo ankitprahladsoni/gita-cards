@@ -25,7 +25,7 @@ const Carousel = () => {
       onSlideChange={(s) => {
         dispatch({ type: "changeVerse", verse: s.activeIndex });
       }}
-      onSwiper={(swiper) => dispatch({ type: "setSwiper", swiper })}
+      // onSwiper={(swiper) => dispatch({ type: "setSwiper", swiper })}
     >
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
