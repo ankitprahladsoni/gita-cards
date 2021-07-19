@@ -45,7 +45,7 @@ function chapterReducer(state: any, action: any) {
     case "loadChapter":
       return { ...state, verseCount: action.verseCount };
     case "changeVerse":
-      return { ...state, verse: action.chapter };
+      return { ...state, verse: action.verse };
 
     default:
       break;

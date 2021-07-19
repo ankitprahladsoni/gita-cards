@@ -32,7 +32,7 @@ export default function NavBar({ children }: any) {
             <Select
               value={verse}
               onChange={(e) =>
-                dispatch({ type: "changeVerse", chapter: e.target.value })
+                dispatch({ type: "changeVerse", verse: e.target.value })
               }
             >
               {verses}

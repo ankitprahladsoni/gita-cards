@@ -16,9 +16,19 @@ const Carousel = () => {
       dispatch({ type: "loadChapter", verseCount: data.length });
     });
   }, [chapter]);
-  console.log(verse);
+  const [sw, setSW] = useState();
+
   return (
-    <Swiper className="mySwiper" autoHeight={true} initialSlide={verse}>
+    <Swiper
+      className="mySwiper"
+      autoHeight={true}
+      initialSlide={verse}
+      onSlideChange={(s) => {
+        dispatch({ type: "changeVerse", verse: s.activeIndex });
+        // console.log((sw as any)?.slideTo);
+      }}
+      onSwiper={(swiper) => setSW(swiper as any)}
+    >
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
           <ContentMemo verse={v} />
