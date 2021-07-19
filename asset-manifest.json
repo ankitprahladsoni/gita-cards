@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/gita-cards/static/js/main.8cbb88df.chunk.js",
-    "main.js.map": "/gita-cards/static/js/main.8cbb88df.chunk.js.map",
+    "main.js": "/gita-cards/static/js/main.18a401f6.chunk.js",
+    "main.js.map": "/gita-cards/static/js/main.18a401f6.chunk.js.map",
     "runtime-main.js": "/gita-cards/static/js/runtime-main.d8c2cae1.js",
     "runtime-main.js.map": "/gita-cards/static/js/runtime-main.d8c2cae1.js.map",
     "static/css/2.0cb5dd01.chunk.css": "/gita-cards/static/css/2.0cb5dd01.chunk.css",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.d8c2cae1.js",
     "static/css/2.0cb5dd01.chunk.css",
     "static/js/2.6be40b6e.chunk.js",
-    "static/js/main.8cbb88df.chunk.js"
+    "static/js/main.18a401f6.chunk.js"
   ]
 }
