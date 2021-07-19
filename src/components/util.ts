@@ -1,4 +1,4 @@
-type Verse = {
+export type Verse = {
   text: string;
   translation: string;
   commentary: string;
