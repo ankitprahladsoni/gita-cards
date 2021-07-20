@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import { useEffect } from "react";
 import { createContext, useContext } from "react";
 
@@ -18,6 +18,8 @@ export const ChapterProvider = ({ children }: any) => {
       JSON.parse(window.localStorage.getItem("chapter") as any) || initial
   );
 
+  const [swiper, setSwiper] = useState();
+
   useEffect(() => {
     window.localStorage.setItem("chapter", JSON.stringify(state));
   }, [state]);
@@ -26,7 +28,8 @@ export const ChapterProvider = ({ children }: any) => {
     chapter: state.chapter,
     verseCount: state.verseCount,
     verse: state.verse,
-    swiper: state.swiper,
+    swiper,
+    setSwiper,
     dispatch,
   };
 

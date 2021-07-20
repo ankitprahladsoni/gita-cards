@@ -2,7 +2,7 @@ import { Box, Flex, useColorModeValue, Select, Image } from "@chakra-ui/react";
 import { useChapterContext } from "./ChapterContext";
 
 export default function NavBar({ children }: any) {
-  const { chapter, verseCount, verse, dispatch } = useChapterContext();
+  const { chapter, verseCount, verse, dispatch, swiper } = useChapterContext();
   const chapters = [...Array(18)].map((_, i) => (
     <option key={i} value={`chapter_${i + 1}`}>
       अध्याय {i + 1}
@@ -27,18 +27,20 @@ export default function NavBar({ children }: any) {
           <Flex alignItems={"center"}>
             <Select
               value={chapter}
-              onChange={(e) =>
-                dispatch({ type: "changeChapter", chapter: e.target.value })
-              }
+              onChange={(e) => {
+                dispatch({ type: "changeChapter", chapter: e.target.value });
+                swiper.slideTo(0);
+              }}
               variant="unstyled"
             >
               {chapters}
             </Select>
             <Select
               value={verse}
-              onChange={(e) =>
-                dispatch({ type: "changeVerse", verse: e.target.value })
-              }
+              onChange={(e) => {
+                dispatch({ type: "changeVerse", verse: e.target.value });
+                swiper.slideTo(e.target.value);
+              }}
               variant="unstyled"
             >
               {verses}

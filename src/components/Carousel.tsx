@@ -8,7 +8,7 @@ import "swiper/swiper.min.css";
 
 const Carousel = () => {
   const [allVerses, setAllVerses] = useState<VerseType[]>([]);
-  const { chapter, verse, dispatch } = useChapterContext();
+  const { chapter, verse, dispatch, setSwiper } = useChapterContext();
 
   useEffect(() => {
     getVerses(chapter).then((data) => {
@@ -25,7 +25,7 @@ const Carousel = () => {
       onSlideChange={(s) => {
         dispatch({ type: "changeVerse", verse: s.activeIndex });
       }}
-      // onSwiper={(swiper) => dispatch({ type: "setSwiper", swiper })}
+      onSwiper={setSwiper}
     >
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
