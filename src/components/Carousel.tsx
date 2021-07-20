@@ -1,4 +1,4 @@
-import { Box, Divider } from "@chakra-ui/react";
+import { Box, Divider, useColorModeValue } from "@chakra-ui/react";
 import Verse from "./Verse";
 import { getVerses, Verse as VerseType } from "./util";
 import { memo, useEffect, useState } from "react";
@@ -47,6 +47,7 @@ const Content = ({ verse }: { verse: VerseType }) => {
       p={2}
       m={2}
       boxShadow="2xl"
+      bg={useColorModeValue("gray.100", "gray.900")}
     >
       <Verse text={verse.text} />
       <Divider />

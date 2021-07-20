@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, useColorModeValue, Select } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue, Select, Image } from "@chakra-ui/react";
 import { useChapterContext } from "./ChapterContext";
 
 export default function NavBar({ children }: any) {
@@ -17,15 +17,20 @@ export default function NavBar({ children }: any) {
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
-          </HStack>
+          <Box>
+            <Image
+              boxSize="50px"
+              src="https://bhagavadgita.io/static/images/radhakrishna.png"
+              alt="logo"
+            />
+          </Box>
           <Flex alignItems={"center"}>
             <Select
               value={chapter}
               onChange={(e) =>
                 dispatch({ type: "changeChapter", chapter: e.target.value })
               }
+              variant="unstyled"
             >
               {chapters}
             </Select>
@@ -34,6 +39,7 @@ export default function NavBar({ children }: any) {
               onChange={(e) =>
                 dispatch({ type: "changeVerse", verse: e.target.value })
               }
+              variant="unstyled"
             >
               {verses}
             </Select>
