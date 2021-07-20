@@ -15,7 +15,7 @@ const Carousel = () => {
       setAllVerses(data);
       dispatch({ type: "loadChapter", verseCount: data.length });
     });
-  }, [chapter]);
+  }, [chapter, dispatch]);
 
   return (
     <Swiper
