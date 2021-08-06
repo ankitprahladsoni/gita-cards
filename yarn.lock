@@ -6510,6 +6510,11 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
   dependencies:
     postcss "^7.0.14"
 
+idb@^6.0.0:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/idb/-/idb-6.1.2.tgz#82ef5c951b8e1f47875d36ccafa4bedafc62f2f1"
+  integrity sha512-1DNDVu3yDhAZkFDlJf0t7r+GLZ248F5pTAtA7V0oVG3yjmV125qZOx3g0XpAEkGZVYQiFDAsSOnGet2bhugc3w==
+
 identity-obj-proxy@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz#94d2bda96084453ef36fbc5aaec37e0f79f1fc14"
@@ -12308,15 +12313,15 @@ workbox-cacheable-response@^6.1.5:
   dependencies:
     workbox-core "^6.1.5"
 
+workbox-core@6.2.2, workbox-core@^6.1.5:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.2.2.tgz#3ea0d0348f318e047db3911816d6a14318f268f0"
+  integrity sha512-cRosvK04AJ3vg4VwIaihLyKLbdwp96D0urukIXm5nsc6XaQqx2OaHFDRjaP1y9g4Js2uNHmBhuHrNSlzQZLoWw==
+
 workbox-core@^5.1.4:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-5.1.4.tgz#8bbfb2362ecdff30e25d123c82c79ac65d9264f4"
   integrity sha512-+4iRQan/1D8I81nR2L5vcbaaFskZC2CL17TLbvWVzQ4qiF/ytOGF6XeV54pVxAvKUtkLANhk8TyIUMtiMw2oDg==
-
-workbox-core@^6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.1.5.tgz#424ff600e2c5448b14ebd58b2f5ac8ed91b73fb9"
-  integrity sha512-9SOEle7YcJzg3njC0xMSmrPIiFjfsFm9WjwGd5enXmI8Lwk8wLdy63B0nzu5LXoibEmS9k+aWF8EzaKtOWjNSA==
 
 workbox-expiration@^5.1.4:
   version "5.1.4"
@@ -12325,12 +12330,13 @@ workbox-expiration@^5.1.4:
   dependencies:
     workbox-core "^5.1.4"
 
-workbox-expiration@^6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/workbox-expiration/-/workbox-expiration-6.1.5.tgz#a62a4ac953bb654aa969ede13507ca5bd154adc2"
-  integrity sha512-6cN+FVbh8fNq56LFKPMchGNKCJeyboHsDuGBqmhDUPvD4uDjsegQpDQzn52VaE0cpywbSIsDF/BSq9E9Yjh5oQ==
+workbox-expiration@^6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/workbox-expiration/-/workbox-expiration-6.2.2.tgz#5df376a46b3a05e5e313cc4639bff678e69bdd56"
+  integrity sha512-xqIk3NeN+pJ3zwVxYQL/ejfmUPGvfUuB5YbxhwCxf76RyzifdgOn2flukz3U9VquokFXoa9jMrfxLVYPLrSDQw==
   dependencies:
-    workbox-core "^6.1.5"
+    idb "^6.0.0"
+    workbox-core "6.2.2"
 
 workbox-google-analytics@^5.1.4:
   version "5.1.4"
