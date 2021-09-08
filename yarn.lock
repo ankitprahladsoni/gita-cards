@@ -4959,12 +4959,12 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
-dom7@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-3.0.0.tgz#b861ce5d67a6becd7aaa3ad02942ff14b1240331"
-  integrity sha512-oNlcUdHsC4zb7Msx7JN3K0Nro1dzJ48knvBOnDPKJ2GV9wl1i5vydJZUSyOfrkKFDZEud/jBsTk92S/VGSAe/g==
+dom7@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.0.tgz#69c8fb9b170c92d64f385fdc37f81456e82b80a1"
+  integrity sha512-xOJ0LAHFwktyj8Xljz4R2wzRI+Y9mR0plkMP0WlqtwqAkqn/vbdAyRifiW/w8mXe17LGktntcAwsQ5fKVDBNYg==
   dependencies:
-    ssr-window "^3.0.0-alpha.1"
+    ssr-window "^4.0.0"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -11037,10 +11037,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-ssr-window@^3.0.0, ssr-window@^3.0.0-alpha.1:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-3.0.0.tgz#fd5b82801638943e0cc704c4691801435af7ac37"
-  integrity sha512-q+8UfWDg9Itrg0yWK7oe5p/XRCJpJF9OBtXfOPgSJl+u3Xd5KI328RUEvUqSMVM9CiQUEf1QdBzJMkYGErj9QA==
+ssr-window@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.0.tgz#4ee82fc360c5f88a022f321740bcfec59ada1a61"
+  integrity sha512-qCg6wJNeGNTVcPK2KFNfwtHU1gA3UZDZdxogu+Ys5+Ue5PMOENxUb7sscpAWWo4mWOBkJRCwQ50IlyA7qZ0hxw==
 
 ssri@^6.0.1:
   version "6.0.2"
@@ -11356,13 +11356,13 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.8.0.tgz#61c850f49ba778e403f00a01fe0b768bd85d0d20"
-  integrity sha512-6H3e7VOihasMp8sPXNhRDkc61UD0XeFlefbWfUHecBLBTtmA+9WxJiKDBMdzgetK1cny+5+mKfVcsmxYgnEDSw==
+swiper@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.0.4.tgz#6de2c0fde56364a754e8efde351ec3cdb2c7c6a1"
+  integrity sha512-vKS06rjU5fWpFaMMqVQEWZ4K+jwoo2Ua5hvq/F03X8HnpI5nfI8gG2eNPMiuWLsrKsK2e7l6giayu4c8UeTxJQ==
   dependencies:
-    dom7 "^3.0.0"
-    ssr-window "^3.0.0"
+    dom7 "^4.0.0"
+    ssr-window "^4.0.0"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
