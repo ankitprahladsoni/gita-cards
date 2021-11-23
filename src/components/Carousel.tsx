@@ -3,7 +3,7 @@ import Verse from "./Verse";
 import { getVerses, Verse as VerseType } from "./util";
 import { memo, useEffect, useState } from "react";
 import { useChapterContext } from "./ChapterContext";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 import "swiper/swiper.min.css";
 
 const Carousel = () => {
