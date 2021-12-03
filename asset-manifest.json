@@ -2,11 +2,11 @@
   "files": {
     "main.js": "/gita-cards/static/js/main.36995a4c.chunk.js",
     "main.js.map": "/gita-cards/static/js/main.36995a4c.chunk.js.map",
-    "runtime-main.js": "/gita-cards/static/js/runtime-main.5afa7cb2.js",
-    "runtime-main.js.map": "/gita-cards/static/js/runtime-main.5afa7cb2.js.map",
+    "runtime-main.js": "/gita-cards/static/js/runtime-main.93f2d2de.js",
+    "runtime-main.js.map": "/gita-cards/static/js/runtime-main.93f2d2de.js.map",
     "static/css/2.cae63079.chunk.css": "/gita-cards/static/css/2.cae63079.chunk.css",
-    "static/js/2.6685e572.chunk.js": "/gita-cards/static/js/2.6685e572.chunk.js",
-    "static/js/2.6685e572.chunk.js.map": "/gita-cards/static/js/2.6685e572.chunk.js.map",
+    "static/js/2.4ce6f725.chunk.js": "/gita-cards/static/js/2.4ce6f725.chunk.js",
+    "static/js/2.4ce6f725.chunk.js.map": "/gita-cards/static/js/2.4ce6f725.chunk.js.map",
     "static/js/3.229a3370.chunk.js": "/gita-cards/static/js/3.229a3370.chunk.js",
     "static/js/3.229a3370.chunk.js.map": "/gita-cards/static/js/3.229a3370.chunk.js.map",
     "static/js/4.7579f4dd.chunk.js": "/gita-cards/static/js/4.7579f4dd.chunk.js",
@@ -43,18 +43,18 @@
     "static/js/19.b67ceb97.chunk.js.map": "/gita-cards/static/js/19.b67ceb97.chunk.js.map",
     "static/js/20.cbc604c6.chunk.js": "/gita-cards/static/js/20.cbc604c6.chunk.js",
     "static/js/20.cbc604c6.chunk.js.map": "/gita-cards/static/js/20.cbc604c6.chunk.js.map",
-    "static/js/21.8973cf2b.chunk.js": "/gita-cards/static/js/21.8973cf2b.chunk.js",
-    "static/js/21.8973cf2b.chunk.js.map": "/gita-cards/static/js/21.8973cf2b.chunk.js.map",
+    "static/js/21.09a53538.chunk.js": "/gita-cards/static/js/21.09a53538.chunk.js",
+    "static/js/21.09a53538.chunk.js.map": "/gita-cards/static/js/21.09a53538.chunk.js.map",
     "index.html": "/gita-cards/index.html",
     "service-worker.js": "/gita-cards/service-worker.js",
     "service-worker.js.map": "/gita-cards/service-worker.js.map",
     "static/css/2.cae63079.chunk.css.map": "/gita-cards/static/css/2.cae63079.chunk.css.map",
-    "static/js/2.6685e572.chunk.js.LICENSE.txt": "/gita-cards/static/js/2.6685e572.chunk.js.LICENSE.txt"
+    "static/js/2.4ce6f725.chunk.js.LICENSE.txt": "/gita-cards/static/js/2.4ce6f725.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5afa7cb2.js",
+    "static/js/runtime-main.93f2d2de.js",
     "static/css/2.cae63079.chunk.css",
-    "static/js/2.6685e572.chunk.js",
+    "static/js/2.4ce6f725.chunk.js",
     "static/js/main.36995a4c.chunk.js"
   ]
 }
