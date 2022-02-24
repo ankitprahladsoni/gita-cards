@@ -10809,7 +10809,7 @@ workbox-recipes@6.4.2:
     workbox-routing "6.4.2"
     workbox-strategies "6.4.2"
 
-workbox-routing@6.4.1, workbox-routing@^6.1.5:
+workbox-routing@6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-6.4.1.tgz#ac6b4c18bc229b6c349fe1013e09263d7b3bf172"
   integrity sha512-FIy27mwM3WdDASOTMX10OZ8q3Un47ULeDtDrDAKfWYIP/oTF2xoA1/HtXpOjBlyg5VP/poPX5GDojXHXAXpfzQ==
@@ -10822,6 +10822,13 @@ workbox-routing@6.4.2:
   integrity sha512-0ss/n9PAcHjTy4Ad7l2puuod4WtsnRYu9BrmHcu6Dk4PgWeJo1t5VnGufPxNtcuyPGQ3OdnMdlmhMJ57sSrrSw==
   dependencies:
     workbox-core "6.4.2"
+
+workbox-routing@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-6.5.0.tgz#cbc085a74622d35d599f0b5352d2b46e9b2e7ba8"
+  integrity sha512-w1A9OVa/yYStu9ds0Dj+TC6zOAoskKlczf+wZI5mrM9nFCt/KOMQiFp1/41DMFPrrN/8KlZTS3Cel/Ttutw93Q==
+  dependencies:
+    workbox-core "6.5.0"
 
 workbox-strategies@6.4.1:
   version "6.4.1"
