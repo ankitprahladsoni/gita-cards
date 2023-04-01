@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://ankitprahladsoni.github.io/gita-cards",
   "dependencies": {
-    "@chakra-ui/react": "^2.4.7",
+    "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@types/node": "^18.11.18",
