@@ -20,7 +20,7 @@ export default function NavBar({ children }: any) {
           <Box>
             <Image
               boxSize="50px"
-              src="https://bhagavadgita.io/static/images/radhakrishna.png"
+              src="https://web.archive.org/web/20190219070127if_/https://bhagavadgita.io/static/images/radhakrishna.png"
               alt="logo"
             />
           </Box>
