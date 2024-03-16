@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gita-cards/static/css/main.5a271d7a.css",
-    "main.js": "/gita-cards/static/js/main.c7eae0ab.js",
+    "main.js": "/gita-cards/static/js/main.57e9b1ff.js",
     "static/js/890.cdb2b667.chunk.js": "/gita-cards/static/js/890.cdb2b667.chunk.js",
     "static/js/961.5fe08c1c.chunk.js": "/gita-cards/static/js/961.5fe08c1c.chunk.js",
     "static/js/925.d8c29ea2.chunk.js": "/gita-cards/static/js/925.d8c29ea2.chunk.js",
@@ -24,7 +24,7 @@
     "service-worker.js": "/gita-cards/service-worker.js",
     "index.html": "/gita-cards/index.html",
     "main.5a271d7a.css.map": "/gita-cards/static/css/main.5a271d7a.css.map",
-    "main.c7eae0ab.js.map": "/gita-cards/static/js/main.c7eae0ab.js.map",
+    "main.57e9b1ff.js.map": "/gita-cards/static/js/main.57e9b1ff.js.map",
     "890.cdb2b667.chunk.js.map": "/gita-cards/static/js/890.cdb2b667.chunk.js.map",
     "961.5fe08c1c.chunk.js.map": "/gita-cards/static/js/961.5fe08c1c.chunk.js.map",
     "925.d8c29ea2.chunk.js.map": "/gita-cards/static/js/925.d8c29ea2.chunk.js.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.5a271d7a.css",
-    "static/js/main.c7eae0ab.js"
+    "static/js/main.57e9b1ff.js"
   ]
 }
