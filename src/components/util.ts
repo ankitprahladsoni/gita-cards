@@ -10,7 +10,4 @@ export const getVerses = (chapter: string): Promise<Verse[]> => {
   );
 };
 
-/**
- * Regex `(.+\n.+)(।।\d+\.\d+।।)`
- * ।।\d+\.\d+।।
- */
+// other fonts   "editor.fontFamily": "'Cascadia Code','Noto Sans Devanagari'",
