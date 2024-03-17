@@ -2,13 +2,18 @@ import { Box, Divider, useColorModeValue } from "@chakra-ui/react";
 import Verse from "./Verse";
 import { getVerses, Verse as VerseType } from "./util";
 import { memo, useEffect, useState } from "react";
-import { useChapterContext } from "./ChapterContext";
+import { useChapterContext } from "./useChapterContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const Carousel = () => {
   const [allVerses, setAllVerses] = useState<VerseType[]>([]);
-  const { chapter, verse, dispatch, setSwiper } = useChapterContext();
+  const {
+    chapter = "chapter_1",
+    verse,
+    dispatch,
+    setSwiper,
+  } = useChapterContext();
 
   useEffect(() => {
     getVerses(chapter).then((data) => {
@@ -29,7 +34,7 @@ const Carousel = () => {
     >
       {allVerses.map((v, i) => (
         <SwiperSlide key={i}>
-          <ContentMemo verse={v} />
+          <ContentMemo {...v} />
         </SwiperSlide>
       ))}
     </Swiper>
@@ -38,10 +43,9 @@ const Carousel = () => {
 
 export default Carousel;
 
-const Content = ({ verse }: { verse: VerseType }) => {
+const Content = ({ text, translation, commentary }: VerseType) => {
   return (
     <Box
-      overflow="auto"
       sx={{ touchAction: "pan-y" }}
       borderRadius={12}
       p={2}
@@ -49,11 +53,11 @@ const Content = ({ verse }: { verse: VerseType }) => {
       boxShadow="2xl"
       bg={useColorModeValue("gray.100", "gray.900")}
     >
-      <Verse text={verse.text} />
+      <Verse text={text} />
       <Divider borderWidth={"medium"} />
-      <Verse.Translation text={verse.translation} />
+      <Verse.Translation text={translation} />
       <Divider borderWidth={"medium"} />
-      <Verse.Commentary text={verse.commentary} />
+      <Verse.Commentary text={commentary} />
     </Box>
   );
 };

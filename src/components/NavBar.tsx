@@ -1,18 +1,21 @@
 import { Box, Flex, useColorModeValue, Select, Image } from "@chakra-ui/react";
-import { useChapterContext } from "./ChapterContext";
+import { useChapterContext } from "./useChapterContext";
 
-export default function NavBar({ children }: any) {
+export default function NavBar({ children }: React.PropsWithChildren) {
   const { chapter, verseCount, verse, dispatch, swiper } = useChapterContext();
+
   const chapters = [...Array(18)].map((_, i) => (
     <option key={i} value={`chapter_${i + 1}`}>
-      अध्याय {i + 1}
+      अध्याय: {i + 1}
     </option>
   ));
+
   const verses = [...Array(verseCount)].map((_, i) => (
     <option key={i} value={i}>
-      श्लोक {i + 1}
+      श्लोक: {i + 1}
     </option>
   ));
+
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
@@ -29,7 +32,7 @@ export default function NavBar({ children }: any) {
               value={chapter}
               onChange={(e) => {
                 dispatch({ type: "changeChapter", chapter: e.target.value });
-                swiper.slideTo(0);
+                swiper?.slideTo(0);
               }}
               variant="unstyled"
             >
@@ -38,8 +41,9 @@ export default function NavBar({ children }: any) {
             <Select
               value={verse}
               onChange={(e) => {
-                dispatch({ type: "changeVerse", verse: e.target.value });
-                swiper.slideTo(e.target.value);
+                const verse = Number.parseInt(e.target.value);
+                dispatch({ type: "changeVerse", verse: verse });
+                swiper?.slideTo(verse);
               }}
               variant="unstyled"
             >
