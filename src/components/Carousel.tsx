@@ -50,9 +50,9 @@ const Content = ({ verse }: { verse: VerseType }) => {
       bg={useColorModeValue("gray.100", "gray.900")}
     >
       <Verse text={verse.text} />
-      <Divider />
+      <Divider borderWidth={"medium"} />
       <Verse.Translation text={verse.translation} />
-      <Divider />
+      <Divider borderWidth={"medium"} />
       <Verse.Commentary text={verse.commentary} />
     </Box>
   );
