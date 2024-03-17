@@ -6,6 +6,11 @@ export type Verse = {
 
 export const getVerses = (chapter: string): Promise<Verse[]> => {
   return import(`../data/chapters/${chapter}.ts`).then(
-    (module) => module.default
+    (module) => module.default,
   );
 };
+
+/**
+ * Regex `(.+\n.+)(।।\d+\.\d+।।)`
+ * ।।\d+\.\d+।।
+ */
