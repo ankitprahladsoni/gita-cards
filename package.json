@@ -34,7 +34,7 @@
     "prettier": "3.2.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.7",
-    "vite-plugin-pwa": "^0.19.4"
+    "vite-plugin-pwa": "^0.19.7"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
