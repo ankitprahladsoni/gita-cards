@@ -20,7 +20,7 @@
     "swiper": "^11.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.13.0",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.2.23",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
