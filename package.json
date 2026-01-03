@@ -28,7 +28,7 @@
     "@vitejs/plugin-react": "^5.1.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-react-refresh": "^0.4.26",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "prettier": "3.6.2",
