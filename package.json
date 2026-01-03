@@ -31,7 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.26",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "prettier": "3.6.2",
+    "prettier": "3.7.4",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
     "vite-plugin-pwa": "^1.1.0"
