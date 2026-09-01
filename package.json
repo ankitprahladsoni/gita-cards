@@ -30,7 +30,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.4.26",
     "husky": "^9.1.7",
-    "lint-staged": "^17.2.0",
+    "lint-staged": "^17.4.1",
     "prettier": "3.9.6",
     "typescript": "^7.0.2",
     "vite": "^8.1.5",
